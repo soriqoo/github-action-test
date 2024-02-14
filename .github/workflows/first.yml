@@ -1,15 +1,7 @@
-name: First Workflow
+name: Test Workflow
 on: push
 jobs:
- echo:
-   runs-on: ubuntu-latest
-   steps:
-    - run: echo 'Hello, GitHub Actions!'
- pwd-ls:
-  name: PWD & LS
+ checkout:
   runs-on: ubuntu-latest
   steps:
-   - name: Print working directory
-     run: pwd
-   - name: List Files
-     run: ls -al
+   - run: ls -al
